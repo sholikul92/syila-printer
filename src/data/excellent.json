@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Kualitas Terjamin",
+        "icon": "fas fa-award",
+        "description": "Setiap produk melalui proses pemeriksaan ketat untuk memastikan kualitasnya."
+    },
+    {
+        "id": 2,
+        "title": "Harga Kompetitif",
+        "icon": "fas fa-tags",
+        "description": "Harga lebih ekonomis, kualitas terbaik."
+    },
+    {
+        "id": 3,
+        "title": "Pengiriman Cepat",
+        "icon": "fas fa-shipping-fast",
+        "description": "Proses pengiriman cepat dan aman ke seluruh wilayah Indonesia."
+    },
+    {
+        "id": 4,
+        "title": "Layanan 24/7",
+        "icon": "fas fa-headset",
+        "description": "Tim customer service siap membantu Anda kapan saja melalui berbagai channel."
+    }
+]

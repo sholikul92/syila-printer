@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Tinta Canon 810/811",
+    "price": "Rp. 150.000,-",
+    "imageUrl": "/product/tinta-canon-745.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Tinta Brother 5000",
+    "price": "Rp. 50.000,-",
+    "imageUrl": "/product/tinta-brother-5000.png"
+  },
+  {
+    "id": 3,
+    "name": "Tinta Canon 745/746",
+    "price": "Rp. 50.000,-",
+    "imageUrl": "/product/tinta-canon-745.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Tinta Brother 563",
+    "price": "Rp. 50.000,-",
+    "imageUrl": "/product/tinta-brother-lc563.png"
+  },
+  {
+    "id": 5,
+    "name": "Tinta Canon 98",
+    "price": "Rp. 50.000,-",
+    "imageUrl": "/product/98.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Tinta Canon 745",
+    "price": "Rp. 50.000,-",
+    "imageUrl": "/product/745.jpg"
+  }
+]

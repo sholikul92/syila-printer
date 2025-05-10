@@ -1,3 +1,7 @@
+---
+import products from "../data/products.json"
+import { Image } from "astro:assets"
+---
 <section id='produk' class='py-16'>
   <div class='container mx-auto px-6'>
     <div class='text-center mb-12'>
@@ -8,42 +12,19 @@
       </p>
     </div>
     <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-      <!-- Produk 1 -->
-      <div class='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300'>
-        <img src='/tinta-brother-5000.png' alt='Tinta HP' class='w-full h-48 object-cover' />
+      {products.map(product => (
+        <div class='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300'>
+        <Image src={product.imageUrl} alt='Tinta HP' width={100} height={100} class='w-full h-48 object-cover' priority/>
         <div class='p-6'>
-          <h3 class='text-xl font-bold text-dark mb-2'>Tinta Brother 5000</h3>
+          <h3 class='text-xl font-bold text-dark mb-2'>{product.name}</h3>
           <p class='text-gray-600 mb-4'>Tinta bekas original Brother 5000 dengan sisa 80-90% kapasitas</p>
           <div class='flex justify-between items-center'>
-            <span class='text-primary font-bold text-lg'>Rp 75.000</span>
+            <span class='text-primary font-bold text-lg'>{product.price}</span>
             <button class='bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded transition duration-300'>Beli Sekarang</button>
           </div>
         </div>
-      </div>
-      <!-- Produk 2 -->
-      <div class='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300'>
-        <img src='/cartridge-canon-810.jpg' alt='Tinta Epson' class='w-full h-48 object-cover' />
-        <div class='p-6'>
-          <h3 class='text-xl font-bold text-dark mb-2'>Cartridge Canon 810 & 811</h3>
-          <p class='text-gray-600 mb-4'>Cartridge Canpn 810 & 811 dengan sisa 70-85% kapasitas</p>
-          <div class='flex justify-between items-center'>
-            <span class='text-primary font-bold text-lg'>Rp 65.000</span>
-            <button class='bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded transition duration-300'>Beli Sekarang</button>
-          </div>
-        </div>
-      </div>
-      <!-- Produk 3 -->
-      <div class='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300'>
-        <img src='/tinta-canon-745.jpg' alt='Tinta Canon' class='w-full h-48 object-cover' />
-        <div class='p-6'>
-          <h3 class='text-xl font-bold text-dark mb-2'>Tinta Canon PG-745</h3>
-          <p class='text-gray-600 mb-4'>Tinta bekas original Canon PG-745 dengan sisa 75-90% kapasitas</p>
-          <div class='flex justify-between items-center'>
-            <span class='text-primary font-bold text-lg'>Rp 85.000</span>
-            <button class='bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded transition duration-300'>Beli Sekarang</button>
-          </div>
-        </div>
-      </div>
+      </div>  
+      ))}
     </div>
   </div>
 </section>
