@@ -1,0 +1,28 @@
+---
+import { SEO } from "astro-seo";
+
+const metadata = {
+  siteName: "Syila Printer",
+  title: "Jual Beli Tinta Printer Baru & Bekas Berkualitas | Harga Terbaik",
+  description:
+    "Temukan berbagai pilihan tinta printer baru dan bekas berkualitas hanya di Manshiro. Harga terjangkau, pengiriman cepat, dan garansi produk tersedia. Belanja tinta jadi lebih mudah dan hemat!",
+  canonicalURL: "https://syilaprinter.vercel.com",
+  robots: true,
+  og: {
+    image: "https://syilaprinter.vercel.com/og-image.webp",
+    type: "website",
+  },
+  openGraph: {
+    basic: {
+      type: "website",
+      title: "Jual Beli Tinta Printer Baru & Bekas Berkualitas | Harga Terbaik",
+      image: "/og-image.webp",
+    },
+    image: {
+      alt: "Thumbnail",
+    },
+  },
+};
+---
+
+<SEO {...metadata} />
