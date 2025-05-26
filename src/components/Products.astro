@@ -1,6 +1,7 @@
 ---
 import products from "../data/products.json";
 import { Image } from "astro:assets";
+const message = (name :string, price: string) => `Halo, saya tertarik dengan produk "${name}" (${price}). Saya ingin menanyakan lebih lanjut tentang produk ini.`
 ---
 
 <section id='produk' class='py-16 md:scroll-mt-2'>
@@ -22,7 +23,12 @@ import { Image } from "astro:assets";
               <p class='text-gray-600 mb-4'>Tinta bekas original Brother 5000 dengan sisa 80-90% kapasitas</p>
               <div class='flex justify-between items-center'>
                 <span class='text-primary font-bold text-lg'>{product.price}</span>
-                <button class='bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded transition duration-300'>Beli Sekarang</button>
+                <a 
+                  href={`https://wa.me/6281283351711?text=${message(product.name, product.price)}`}
+                  target="_blank"
+                  class='bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded transition duration-300'>
+                  Beli Sekarang
+                </a>
               </div>
             </div>
           </div>
